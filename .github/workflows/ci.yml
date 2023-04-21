@@ -24,6 +24,7 @@ jobs:
         run: |
           $short_sha = $env:GITHUB_SHA.SubString(0, 7)
           $Env:GO_BUILD_OPTS = "-ldflags `"-X github.com/sarvex/wsldl/version.version=CI-${short_sha}`""
+           $Env:GOARCH="amd64"
           .\build.bat all
           Compress-Archive -Path .\out\icons\* -DestinationPath .\out\icons.zip
       - uses: actions/upload-artifact@v3.1.2
@@ -42,6 +43,7 @@ jobs:
         run: |
           $short_sha = $env:GITHUB_SHA.SubString(0, 7)
           $Env:GO_BUILD_OPTS = "-ldflags `"-X github.com/sarvex/wsldl/version.version=CI-${short_sha}`""
+          $Env:GOARCH="386"
           .\build.bat all
           Compress-Archive -Path .\out\icons\* -DestinationPath .\out\icons.zip
       - uses: actions/upload-artifact@v3.1.2
@@ -59,7 +61,6 @@ jobs:
       - name: Build
         run: |
           $Env:PATH = "${Env:USERPROFILE}\go\bin;${Env:PATH}"
-          go install golang.org/dl/go1.20.3
           $short_sha = $env:GITHUB_SHA.SubString(0, 7)
           $Env:GO_BUILD_OPTS = "-ldflags `"-X github.com/sarvex/wsldl/version.version=CI-${short_sha}`""
           $Env:GOARCH="arm64"

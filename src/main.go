@@ -4,17 +4,17 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/yuk7/wsldl/backup"
-	"github.com/yuk7/wsldl/clean"
-	"github.com/yuk7/wsldl/config"
-	"github.com/yuk7/wsldl/get"
-	"github.com/yuk7/wsldl/help"
-	"github.com/yuk7/wsldl/install"
-	"github.com/yuk7/wsldl/isregd"
-	"github.com/yuk7/wsldl/lib/utils"
-	"github.com/yuk7/wsldl/run"
-	"github.com/yuk7/wsldl/version"
-	"github.com/yuk7/wsllib-go"
+	"github.com/sarvex/wsldl/backup"
+	"github.com/sarvex/wsldl/clean"
+	"github.com/sarvex/wsldl/config"
+	"github.com/sarvex/wsldl/get"
+	"github.com/sarvex/wsldl/help"
+	"github.com/sarvex/wsldl/install"
+	"github.com/sarvex/wsldl/isregd"
+	"github.com/sarvex/wsldl/lib/utils"
+	"github.com/sarvex/wsldl/run"
+	"github.com/sarvex/wsldl/version"
+	"github.com/sarvex/wsllib-go"
 )
 
 func main() {
