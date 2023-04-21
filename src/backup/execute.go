@@ -3,8 +3,8 @@ package backup
 import (
 	"os"
 
-	"github.com/yuk7/wsldl/lib/utils"
-	"github.com/yuk7/wsllib-go"
+	"github.com/sarvex/wsldl/lib/utils"
+	"github.com/sarvex/wsllib-go"
 )
 
 //Execute is default run entrypoint.

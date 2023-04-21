@@ -6,10 +6,10 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/yuk7/wsldl/lib/utils"
-	"github.com/yuk7/wsldl/lib/wtutils"
-	"github.com/yuk7/wsllib-go"
-	wslreg "github.com/yuk7/wslreglib-go"
+	"github.com/sarvex/wsldl/lib/utils"
+	"github.com/sarvex/wsldl/lib/wtutils"
+	"github.com/sarvex/wsllib-go"
+	wslreg "github.com/sarvex/wslreglib-go"
 )
 
 //ExecRead execs command and read output

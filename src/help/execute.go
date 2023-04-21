@@ -1,12 +1,12 @@
 package help
 
 import (
-	"github.com/yuk7/wsldl/backup"
-	"github.com/yuk7/wsldl/clean"
-	"github.com/yuk7/wsldl/config"
-	"github.com/yuk7/wsldl/get"
-	"github.com/yuk7/wsldl/run"
-	"github.com/yuk7/wsllib-go"
+	"github.com/sarvex/wsldl/backup"
+	"github.com/sarvex/wsldl/clean"
+	"github.com/sarvex/wsldl/config"
+	"github.com/sarvex/wsldl/get"
+	"github.com/sarvex/wsldl/run"
+	"github.com/sarvex/wsllib-go"
 )
 
 //Execute is default install entrypoint

@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yuk7/wsldl/lib/utils"
-	wslreg "github.com/yuk7/wslreglib-go"
+	"github.com/sarvex/wsldl/lib/utils"
+	wslreg "github.com/sarvex/wslreglib-go"
 )
 
 func backupReg(name string, destFileName string) error {

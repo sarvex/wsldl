@@ -7,9 +7,9 @@ import (
 	"os/exec"
 	"strconv"
 
-	"github.com/yuk7/wsldl/lib/preset"
-	"github.com/yuk7/wsldl/lib/utils"
-	"github.com/yuk7/wsllib-go"
+	"github.com/sarvex/wsldl/lib/preset"
+	"github.com/sarvex/wsldl/lib/utils"
+	"github.com/sarvex/wsllib-go"
 )
 
 //Execute is default install entrypoint

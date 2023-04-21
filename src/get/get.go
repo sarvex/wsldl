@@ -1,8 +1,8 @@
 package get
 
 import (
-	"github.com/yuk7/wsldl/lib/utils"
-	"github.com/yuk7/wsllib-go"
+	"github.com/sarvex/wsldl/lib/utils"
+	"github.com/sarvex/wsllib-go"
 )
 
 //WslGetConfig is getter of distribution configuration

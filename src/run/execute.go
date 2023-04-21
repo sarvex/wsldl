@@ -5,9 +5,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/yuk7/wsldl/lib/utils"
-	"github.com/yuk7/wsllib-go"
-	wslreg "github.com/yuk7/wslreglib-go"
+	"github.com/sarvex/wsldl/lib/utils"
+	"github.com/sarvex/wsllib-go"
+	wslreg "github.com/sarvex/wslreglib-go"
 )
 
 //Execute is default run entrypoint.

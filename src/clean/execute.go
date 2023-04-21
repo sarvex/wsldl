@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/yuk7/wsldl/lib/utils"
+	"github.com/sarvex/wsldl/lib/utils"
 )
 
 //Execute is default run entrypoint.

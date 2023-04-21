@@ -3,7 +3,7 @@ package isregd
 import (
 	"os"
 
-	"github.com/yuk7/wsllib-go"
+	"github.com/sarvex/wsllib-go"
 )
 
 //Execute is default isregd entrypoint. Exits with registerd status

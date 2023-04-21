@@ -1,12 +1,12 @@
 package help
 
 import (
-	"github.com/yuk7/wsldl/backup"
-	"github.com/yuk7/wsldl/clean"
-	"github.com/yuk7/wsldl/config"
-	"github.com/yuk7/wsldl/get"
-	"github.com/yuk7/wsldl/install"
-	"github.com/yuk7/wsldl/run"
+	"github.com/sarvex/wsldl/backup"
+	"github.com/sarvex/wsldl/clean"
+	"github.com/sarvex/wsldl/config"
+	"github.com/sarvex/wsldl/get"
+	"github.com/sarvex/wsldl/install"
+	"github.com/sarvex/wsldl/run"
 )
 
 // ShowHelpAll shows all help messages
