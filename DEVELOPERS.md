@@ -46,7 +46,7 @@ $ env GOOS=windows GOARCH=amd64 go build -ldflags "-w -s"
 
 Optionally, to add an icon to the exe, create and link a resource with
 ```bash
-$ go get github.com/josephspurrier/goversioninfo/cmd/goversioninfo
+$ go install github.com/josephspurrier/goversioninfo/cmd/goversioninfo
 $ export PATH=$PATH:~/go/bin
 $ goversioninfo -icon res/DistroName/icon.ico -o src/DistroName.syso
 $ env GOOS=windows GOARCH=ArchitectureName go build -ldflags "-w -s" -o DistroName.exe

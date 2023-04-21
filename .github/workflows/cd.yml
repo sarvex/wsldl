@@ -18,13 +18,13 @@ jobs:
           $Env:GO_BUILD_OPTS = "-ldflags `"-w -s -X github.com/sarvex/wsldl/version.version=${version}`""
           $Env:PATH = "${Env:USERPROFILE}\go\bin;${Env:PATH}" 
 
+          echo Download golang 1.20
+          go install golang.org/dl/go1.20.3
+          go1.20.3 download
+
           echo AMD64 build
           .\build.bat all
           move out out_amd64
-
-          echo Download golang 1.20
-          go get golang.org/dl/go1.20
-          go1.20 download
 
           echo ARM64 build
           $Env:GOBIN="go1.20"
