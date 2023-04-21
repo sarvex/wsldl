@@ -34,7 +34,7 @@ jobs:
             out/icons.zip
           if-no-files-found: error
   compile-wsldl-x86:
-    name: Compile wsldl
+    name: Compile wsldl x86
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
