@@ -10,7 +10,7 @@ jobs:
     name: Publish on Github
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.5.2
       - name: Build
         run: |
           $Env:PATH = "${Env:USERPROFILE}\go\bin;${Env:PATH}"
@@ -20,20 +20,17 @@ jobs:
 
           echo Download golang 1.20
           go install golang.org/dl/go1.20.3
-          go1.20.3 download
 
           echo AMD64 build
           .\build.bat all
           move out out_amd64
 
           echo ARM64 build
-          $Env:GOBIN="go1.20"
           $Env:GOARCH="arm64"
           .\build.bat all
           move out out_arm64
 
           echo X64 build
-          $Env:GOBIN="go1.20"
           $Env:GOARCH="386"
           .\build.bat all
           move out out_x86

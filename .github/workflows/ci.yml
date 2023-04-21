@@ -19,14 +19,14 @@ jobs:
     name: Compile wsldl
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.5.2
       - name: Build
         run: |
           $short_sha = $env:GITHUB_SHA.SubString(0, 7)
           $Env:GO_BUILD_OPTS = "-ldflags `"-X github.com/sarvex/wsldl/version.version=CI-${short_sha}`""
           .\build.bat all
           Compress-Archive -Path .\out\icons\* -DestinationPath .\out\icons.zip
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3.1.2
         with:
           name: Build results-Windows
           path: |
@@ -37,14 +37,14 @@ jobs:
     name: Compile wsldl x86
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.5.2
       - name: Build
         run: |
           $short_sha = $env:GITHUB_SHA.SubString(0, 7)
           $Env:GO_BUILD_OPTS = "-ldflags `"-X github.com/sarvex/wsldl/version.version=CI-${short_sha}`""
           .\build.bat all
           Compress-Archive -Path .\out\icons\* -DestinationPath .\out\icons.zip
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3.1.2
         with:
           name: Build results-Windows
           path: |
@@ -55,19 +55,17 @@ jobs:
     name: Compile wsldl ARM64
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.5.2
       - name: Build
         run: |
           $Env:PATH = "${Env:USERPROFILE}\go\bin;${Env:PATH}"
           go install golang.org/dl/go1.20.3
-          go1.20.3 download
           $short_sha = $env:GITHUB_SHA.SubString(0, 7)
           $Env:GO_BUILD_OPTS = "-ldflags `"-X github.com/sarvex/wsldl/version.version=CI-${short_sha}`""
-          $Env:GOBIN="go1.20.3"
           $Env:GOARCH="arm64"
           .\build.bat all
           Compress-Archive -Path .\out\icons\* -DestinationPath .\out\icons.zip
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3.1.2
         with:
           name: Build results-Windows-ARM64
           path: |
@@ -78,7 +76,7 @@ jobs:
     name: Cross-compile wsldl from Linux
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.5.2
       - name: Build
         run: |
           go install github.com/josephspurrier/goversioninfo/cmd/goversioninfo@latest
@@ -86,7 +84,7 @@ jobs:
           cd src
           goversioninfo
           env GOOS=windows GOARCH=amd64 go build -ldflags "-X github.com/sarvex/wsldl/version.version=CI-Cross-${GITHUB_SHA:0:7}"
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3.5.2
         with:
           name: Build results-Linux
           path: |
