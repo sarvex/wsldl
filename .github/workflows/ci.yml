@@ -84,7 +84,7 @@ jobs:
           cd src
           goversioninfo
           env GOOS=windows GOARCH=amd64 go build -ldflags "-X github.com/sarvex/wsldl/version.version=CI-Cross-${GITHUB_SHA:0:7}"
-      - uses: actions/upload-artifact@v3.5.2
+      - uses: actions/upload-artifact@v3.1.2
         with:
           name: Build results-Linux
           path: |
