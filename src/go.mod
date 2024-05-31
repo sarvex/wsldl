@@ -3,7 +3,7 @@ module github.com/sarvex/wsldl
 go 1.20
 
 require (
-	github.com/fatih/color v1.16.0
+	github.com/fatih/color v1.17.0
 	github.com/mitchellh/go-ps v1.0.0
 	github.com/muhammadmuzzammil1998/jsonc v1.0.0
 	github.com/sarvex/wsllib-go v1.0.0
