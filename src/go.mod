@@ -9,7 +9,7 @@ require (
 	github.com/sarvex/wsllib-go v1.0.0
 	github.com/sarvex/wslreglib-go v1.0.0
 	github.com/satori/go.uuid v1.2.0
-	github.com/schollz/progressbar/v3 v3.14.3
+	github.com/schollz/progressbar/v3 v3.14.4
 	golang.org/x/text v0.15.0
 )
 
