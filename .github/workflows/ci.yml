@@ -19,7 +19,7 @@ jobs:
     name: Compile wsldl
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Build
         run: |
           $short_sha = $env:GITHUB_SHA.SubString(0, 7)
@@ -38,7 +38,7 @@ jobs:
     name: Compile wsldl x86
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Build
         run: |
           $short_sha = $env:GITHUB_SHA.SubString(0, 7)
@@ -57,7 +57,7 @@ jobs:
     name: Compile wsldl ARM64
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Build
         run: |
           $Env:PATH = "${Env:USERPROFILE}\go\bin;${Env:PATH}"
@@ -77,7 +77,7 @@ jobs:
     name: Cross-compile wsldl from Linux
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Build
         run: |
           go install github.com/josephspurrier/goversioninfo/cmd/goversioninfo@latest
