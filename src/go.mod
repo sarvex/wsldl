@@ -1,6 +1,6 @@
 module github.com/sarvex/wsldl
 
-go 1.22
+go 1.23.0
 
 toolchain go1.24.1
 
@@ -12,7 +12,7 @@ require (
 	github.com/sarvex/wslreglib-go v1.0.0
 	github.com/satori/go.uuid v1.2.0
 	github.com/schollz/progressbar/v3 v3.18.0
-	golang.org/x/text v0.15.0
+	golang.org/x/text v0.28.0
 )
 
 require (
