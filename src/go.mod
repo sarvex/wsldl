@@ -2,7 +2,7 @@ module github.com/sarvex/wsldl
 
 go 1.24.0
 
-toolchain go1.25.3
+toolchain go1.27.1
 
 require (
 	github.com/fatih/color v1.18.0
